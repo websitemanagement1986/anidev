@@ -154,19 +154,27 @@ async function main() {
 
   const catDir = path.join(__dirname, '..', 'assets', 'categories');
   fs.mkdirSync(catDir, { recursive: true });
-  const categorySources = {
-    'fresh-fruits': 'mango-alphonso',
-    'fresh-vegetables': 'tomato-local',
-    'grains-cereals': 'basmati-rice',
-    'artificial-jewelry': 'earrings-jhumka',
+
+  // Wide landscape photos chosen to fill category cards (not single-product crops)
+  const CATEGORY_PHOTOS = {
+    'fresh-fruits': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Mixed_fruit.jpg/960px-Mixed_fruit.jpg',
+    'fresh-vegetables': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Fresh_Vegetables_display_in_Iloilo_Terminal_Public_Market_01.jpg/960px-Fresh_Vegetables_display_in_Iloilo_Terminal_Public_Market_01.jpg',
+    'grains-cereals': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Basmati_Rice_India%2C_raw.jpg/960px-Basmati_Rice_India%2C_raw.jpg',
+    'artificial-jewelry': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/An_array_of_jewellery_being_sold_at_Rishikesh.jpg/960px-An_array_of_jewellery_being_sold_at_Rishikesh.jpg',
   };
-  for (const [slug, productId] of Object.entries(categorySources)) {
-    const src = path.join(dir, `${productId}.jpg`);
+
+  for (const [slug, url] of Object.entries(CATEGORY_PHOTOS)) {
     const dst = path.join(catDir, `${slug}.jpg`);
-    if (fs.existsSync(src)) {
-      fs.copyFileSync(src, dst);
-      console.log(`Category ${slug} ← ${productId}`);
+    try {
+      process.stdout.write(`Category ${slug}... `);
+      const buf = await fetchImage(slug, url);
+      fs.writeFileSync(dst, buf);
+      console.log(`OK (${(buf.length / 1024).toFixed(0)} KB)`);
+    } catch (err) {
+      console.log(`FAIL: ${err.message}`);
+      fail++;
     }
+    await sleep(2000);
   }
 
   console.log(`\nDone: ${ok} images, ${fail} missing`);
