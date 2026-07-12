@@ -49,7 +49,6 @@ function renderFooter() {
         <p>Fruits, vegetables, grains, cereals and artificial jewelry — delivered by Anidev.</p>
         <p class="footer-contact">
           <strong>${ANIDEV.company}</strong><br>
-          <strong>Contact:</strong> ${ANIDEV.contactPerson}<br>
           <strong>Address:</strong><br>${ANIDEV.address}<br><br>
           <strong>Phone:</strong> <a href="tel:${ANIDEV.phone}">${ANIDEV.phoneDisplay}</a><br>
           <strong>Email:</strong> <a href="mailto:${ANIDEV.email}">${ANIDEV.email}</a>

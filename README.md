@@ -36,7 +36,7 @@ Open http://localhost:3000
 | `RAZORPAY_KEY_ID` | Razorpay public key |
 | `RAZORPAY_KEY_SECRET` | Razorpay secret |
 | `RESEND_API_KEY` | Email sending (optional) |
-| `FROM_EMAIL` | Sender email (default: orders@anidev.in) |
+| `FROM_EMAIL` | Sender email (default: orders@anidevmultitrading.in) |
 | `ADMIN_EMAIL` | Order & contact notifications |
 | `PORT` | Server port (default: 3000) |
 
@@ -48,7 +48,7 @@ Open http://localhost:3000
 
 ## Contact
 
-- **Company:** Anidev
-- **Contact:** Neeraj Kumar
-- **Phone:** +91 8796065003
-- **Address:** Unit no 527, P5/B Block, NPX Tower, Sec-153, Noida, Gautam Buddha Nagar, UP 201301
+- **Company:** Anidev Multitrading Pvt Ltd
+- **Phone:** +91 8447559220
+- **Email:** support@anidevmultitrading.in
+- **Address:** Office no 616, SL Tower, Commercial Belt Alpha 1, Greater Noida, Gautam Buddha Nagar, UP 201310

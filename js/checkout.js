@@ -236,7 +236,7 @@ function renderSuccessPage() {
       <p class="support-note">For support, call <a href="tel:${ANIDEV.phone}">${ANIDEV.phoneDisplay}</a> or email <a href="mailto:${ANIDEV.email}">${ANIDEV.email}</a></p>
       <a href="index.html" class="btn btn-primary">Continue Shopping</a>
     </div>`;
-  sessionStorage.removeItem('anidev_order';
+  sessionStorage.removeItem('anidev_order');
 }
 
 document.addEventListener('DOMContentLoaded', () => {

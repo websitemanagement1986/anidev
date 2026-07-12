@@ -11,7 +11,7 @@ const dir = path.join(__dirname, '..', 'assets', 'products');
 const fominoDir = path.join(__dirname, '..', '..', 'Fomino', 'assets', 'products');
 fs.mkdirSync(dir, { recursive: true });
 
-const UA = 'AnidevBot/1.0 (support@anidev.in)';
+const UA = 'AnidevBot/1.0 (support@anidevmultitrading.in)';
 
 const PHOTOS = {
   'banana-robusta': 'https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',

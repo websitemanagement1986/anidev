@@ -1,6 +1,6 @@
 async function sendViaResend({ to, subject, html }) {
   const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.FROM_EMAIL || 'orders@anidev.in';
+  const from = process.env.FROM_EMAIL || 'orders@anidevmultitrading.in';
 
   if (!apiKey) {
     console.log(`[EMAIL SKIPPED - no RESEND_API_KEY] To: ${to}, Subject: ${subject}`);
@@ -54,7 +54,7 @@ function buildOrderHtml({ transactionId, orderId, customer, items, total, paymen
          <strong>Email:</strong> ${customer.email}<br>
          <strong>Phone:</strong> ${customer.phone}<br>
          <strong>Address:</strong> ${customer.address}, ${customer.city}, ${customer.state} - ${customer.pincode}</p>
-      <p style="color:#64748b;font-size:12px;">Anidev | Unit no 527, P5/B Block, NPX Tower, Sec-153, Noida, Gautam Buddha Nagar, UP 201301 | +91 8796065003</p>
+      <p style="color:#64748b;font-size:12px;">Anidev Multitrading Pvt Ltd | Office no 616, SL Tower, Commercial Belt Alpha 1, Greater Noida, Gautam Buddha Nagar, UP 201310 | +91 8447559220</p>
     </div>`;
 }
 

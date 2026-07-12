@@ -65,6 +65,7 @@ function getCartCount() {
 function getCartDetails() {
   return getCart().map((item) => {
     const product = getProduct(item.id);
+    if (!product || product.price == null) return null;
     return {
       id: item.id,
       name: product.name,
@@ -74,7 +75,7 @@ function getCartDetails() {
       qty: item.qty,
       lineTotal: product.price * item.qty,
     };
-  });
+  }).filter(Boolean);
 }
 
 function updateCartBadge() {

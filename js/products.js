@@ -1,11 +1,10 @@
 const ANIDEV = {
   name: 'Anidev',
-  company: 'Anidev',
-  contactPerson: 'Neeraj Kumar',
-  phone: '+918796065003',
-  phoneDisplay: '+91 8796065003',
-  email: 'support@anidev.in',
-  address: 'Unit no 527, P5/B Block, NPX Tower, Sec-153, Noida, Gautam Buddha Nagar, UP 201301',
+  company: 'Anidev Multitrading Pvt Ltd',
+  phone: '+918447559220',
+  phoneDisplay: '+91 8447559220',
+  email: 'support@anidevmultitrading.in',
+  address: 'Office no 616, SL Tower, Commercial Belt Alpha 1, Greater Noida, Gautam Buddha Nagar, UP 201310',
 };
 
 const CATEGORIES = [
