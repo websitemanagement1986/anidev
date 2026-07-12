@@ -8,10 +8,10 @@ const ANIDEV = {
 };
 
 const CATEGORIES = [
-  { slug: 'fresh-fruits', name: 'Fresh Fruits', shortName: 'Fruits', icon: '🍎', color: '#e65100', image: 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=500&h=420&fit=crop', tagline: 'Farm-fresh fruits daily', description: 'Seasonal and everyday fruits picked for freshness.' },
-  { slug: 'fresh-vegetables', name: 'Fresh Vegetables', shortName: 'Vegetables', icon: '🥬', color: '#2e7d32', image: 'https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&w=500&h=420&fit=crop', tagline: 'Crisp vegetables from farms', description: 'Daily kitchen vegetables delivered fresh.' },
-  { slug: 'grains-cereals', name: 'Grains & Cereals', shortName: 'Grains', icon: '🌾', color: '#f9a825', image: 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=500&h=420&fit=crop', tagline: 'Rice, wheat, oats & more', description: 'Premium grains and breakfast cereals for your pantry.' },
-  { slug: 'artificial-jewelry', name: 'Artificial Jewelry', shortName: 'Jewelry', icon: '💎', color: '#ad1457', image: 'https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=500&h=420&fit=crop', tagline: 'Elegant fashion jewelry', description: 'Trendy artificial jewelry — earrings, necklaces, bangles & more.' },
+  { slug: 'fresh-fruits', name: 'Fresh Fruits', shortName: 'Fruits', icon: '🍎', color: '#e65100', image: 'assets/categories/fresh-fruits.jpg', tagline: 'Farm-fresh fruits daily', description: 'Seasonal and everyday fruits picked for freshness.' },
+  { slug: 'fresh-vegetables', name: 'Fresh Vegetables', shortName: 'Vegetables', icon: '🥬', color: '#2e7d32', image: 'assets/categories/fresh-vegetables.jpg', tagline: 'Crisp vegetables from farms', description: 'Daily kitchen vegetables delivered fresh.' },
+  { slug: 'grains-cereals', name: 'Grains & Cereals', shortName: 'Grains', icon: '🌾', color: '#f9a825', image: 'assets/categories/grains-cereals.jpg', tagline: 'Rice, wheat, oats & more', description: 'Premium grains and breakfast cereals for your pantry.' },
+  { slug: 'artificial-jewelry', name: 'Artificial Jewelry', shortName: 'Jewelry', icon: '💎', color: '#ad1457', image: 'assets/categories/artificial-jewelry.jpg', tagline: 'Elegant fashion jewelry', description: 'Trendy artificial jewelry — earrings, necklaces, bangles & more.' },
 ];
 
 const PRODUCTS = [
