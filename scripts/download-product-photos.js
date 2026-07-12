@@ -39,6 +39,17 @@ const COMMONS = {
 
   'corn-flakes': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Spoonful_of_cereal.jpg/960px-Spoonful_of_cereal.jpg',
   muesli: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Muesli.jpg/960px-Muesli.jpg',
+
+  'basmati-rice': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Basmati_Rice_India%2C_raw.jpg/960px-Basmati_Rice_India%2C_raw.jpg',
+  'sona-masoori': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Masoori_Rice_%285193854729%29.jpg/960px-Masoori_Rice_%285193854729%29.jpg',
+  'whole-wheat-atta': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Whole_wheat_grain_flour_being_scooped.jpg/960px-Whole_wheat_grain_flour_being_scooped.jpg',
+  'toor-dal': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Pigeon_Pea_%28Toor_Dal%29_%2849683602388%29.jpg/960px-Pigeon_Pea_%28Toor_Dal%29_%2849683602388%29.jpg',
+  'moong-dal': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Moong_dal.jpg/960px-Moong_dal.jpg',
+  'chana-dal': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Chana_dal.jpg/960px-Chana_dal.jpg',
+  'oats-rolled': 'https://upload.wikimedia.org/wikipedia/commons/9/97/Rolled_oats.jpg',
+  'ragi-flour': 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Finger_millet_grains_of_mixed_color.jpg',
+  'bajra-flour': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Millet_grains.jpg/960px-Millet_grains.jpg',
+  'poha-thick': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Poha.jpg/960px-Poha.jpg',
 };
 
 // Vegetables & grains — still Pexels until full Commons migration
@@ -51,16 +62,6 @@ const PEXELS = {
   cauliflower: 'https://images.pexels.com/photos/1300975/pexels-photo-1300975.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
   'spinach-palak': 'https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
   ginger: 'https://images.pexels.com/photos/4198142/pexels-photo-4198142.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'basmati-rice': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'sona-masoori': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'whole-wheat-atta': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'toor-dal': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'moong-dal': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'chana-dal': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'oats-rolled': 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'ragi-flour': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'bajra-flour': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-  'poha-thick': 'https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
 };
 
 const PHOTOS = { ...COMMONS, ...PEXELS };
