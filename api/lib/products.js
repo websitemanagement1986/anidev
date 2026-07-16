@@ -1,3 +1,6 @@
+const FREE_DELIVERY_THRESHOLD = 500;
+const DELIVERY_CHARGE = 50;
+
 const PRODUCTS = [
   { id: 'banana-robusta', name: 'Banana — Robusta', price: 38 },
   { id: 'mango-alphonso', name: 'Mango — Alphonso', price: 299 },
@@ -44,7 +47,7 @@ const PRODUCTS = [
 function validateCart(cart) {
   if (!Array.isArray(cart) || cart.length === 0) throw new Error('Cart is empty');
   const items = [];
-  let total = 0;
+  let subtotal = 0;
   for (const entry of cart) {
     const product = PRODUCTS.find((p) => p.id === entry.id);
     if (!product) throw new Error(`Unknown product: ${entry.id}`);
@@ -52,10 +55,12 @@ function validateCart(cart) {
     if (!qty || qty < 1 || qty > 99) throw new Error(`Invalid quantity for ${product.name}`);
     const lineTotal = product.price * qty;
     items.push({ id: product.id, name: product.name, price: product.price, qty, lineTotal });
-    total += lineTotal;
+    subtotal += lineTotal;
   }
-  if (total <= 0) throw new Error('Invalid order total');
-  return { items, total, amountPaise: Math.round(total * 100) };
+  if (subtotal <= 0) throw new Error('Invalid order total');
+  const deliveryCharge = subtotal >= FREE_DELIVERY_THRESHOLD ? 0 : DELIVERY_CHARGE;
+  const total = subtotal + deliveryCharge;
+  return { items, subtotal, deliveryCharge, total, amountPaise: Math.round(total * 100) };
 }
 
 module.exports = { PRODUCTS, validateCart };

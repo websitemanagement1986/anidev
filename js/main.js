@@ -9,7 +9,7 @@ function renderHeader() {
       <div class="container header-top-inner">
         <span>📞 <a href="tel:${ANIDEV.phone}">${ANIDEV.phoneDisplay}</a></span>
         <span>✉️ <a href="mailto:${ANIDEV.email}">${ANIDEV.email}</a></span>
-        <span>🚚 Free delivery on orders above ₹499</span>
+        <span>🚚 Free delivery on orders above ₹500</span>
       </div>
     </div>
     <div class="container header-main">
@@ -71,7 +71,8 @@ function renderFooter() {
         <ul>
           <li><a href="terms.html">Terms & Conditions</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+          <li><a href="refund.html">Return & Refund Policy</a></li>
           <li><a href="cancellation.html">Cancellation Policy</a></li>
         </ul>
       </div>
